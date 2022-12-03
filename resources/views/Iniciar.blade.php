@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ asset('css/Iniciar/Style.css') }}">
-    <link rel="shortcut icon" href="{{ asset('img/Logo.png') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/Iniciar/Style.css') }}">
+    <link rel="shortcut icon" href="{{ secure_asset('img/Logo.png') }}" />
     {{--     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
     {{-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet"> --}}
@@ -19,7 +19,7 @@
         <header class="header">
             <section class="sub_header">
                 <article class="c_logo">
-                    <img class="logo" src="{{ asset('img/Logo.png') }}">
+                    <img class="logo" src="{{ secure_asset('img/Logo.png') }}">
                 </article>
 
 
@@ -47,7 +47,7 @@
                             <input id="password" class="input_ini" name="password" type="password" />
                             {{-- <i class="formulario__validacion-estado fas fa-times-circle"></i>  --}}
                             <img id="show_password_i" onclick="mostrarPassword()" class="show_password_i"
-                                src="{{ asset('img/eye_close.png') }}" alt="">
+                                src="{{ secure_asset('img/eye_close.png') }}" alt="">
                         </article>
                         {{-- <section class="c_mostrar_password">
                             </section> --}}
@@ -140,7 +140,7 @@
                                     onclick="mostrarPassword2()"> <span class="fa fa-eye-slash icon"></span></button>
                              </section> --}}
                             {{--  <section class="c_mostrar_password">
-                                <img id="show_password2" onclick="mostrarPassword2()" class="show_password_i" src="{{ asset('img/eye_open.png') }}" alt="">
+                                <img id="show_password2" onclick="mostrarPassword2()" class="show_password_i" src="{{ secure_asset('img/eye_open.png') }}" alt="">
                             </section> --}}
                         </article>
                     </section>
@@ -173,8 +173,8 @@
                 <!-- Grupo ICONOS DE REDES -->
                 <article class="c_iconos">
                     <a href="{{ url('auth/facebook') }}" class="c_icono" type="button"><img class="t_icono"
-                            src="{{ asset('img/Facebook.png') }}"></a>
-                    <a class="c_icono" type="button"><img class="t_icono" src="{{ asset('img/Google.png') }}"></a>
+                            src="{{ secure_asset('img/Facebook.png') }}"></a>
+                    <a class="c_icono" type="button"><img class="t_icono" src="{{ secure_asset('img/Google.png') }}"></a>
                 </article>
 
 
@@ -242,9 +242,9 @@
             <section class="Lista2">
                 <h2 class="LetraC">CITRIAPP</h2>
                 <section class="imgL">
-                    <article class="cimgFacebook"><img class="imgFacebook" src="{{ asset('img/Facebook.png') }}"  alt=""></article>
-                    <article class="cimgWhatsapp"><img class="imgWhatsapp" src="{{ asset('img/Whatsapp.png') }}" alt=""></article>
-                    <article class="cimgInstagram"><img class="imgInstagram" src="{{ asset('img/Instagram.png') }}" alt=""></article>
+                    <article class="cimgFacebook"><img class="imgFacebook" src="{{ secure_asset('img/Facebook.png') }}"  alt=""></article>
+                    <article class="cimgWhatsapp"><img class="imgWhatsapp" src="{{ secure_asset('img/Whatsapp.png') }}" alt=""></article>
+                    <article class="cimgInstagram"><img class="imgInstagram" src="{{ secure_asset('img/Instagram.png') }}" alt=""></article>
                 </section>
             </section>
         </section>
@@ -253,12 +253,12 @@
             <section class="Lista3">
                 <section class="imgR">
                     <article class="cimgTelefono">
-                        <img class="imgTelefono" src="{{ asset('img/telefono.png') }}">
+                        <img class="imgTelefono" src="{{ secure_asset('img/telefono.png') }}">
                         <h2>3138456789</h2>
                     </article>
 
                     <article class="cimgGmail">
-                        <img class="imgGmail" src="{{ asset('img/gmail (1).png') }}">
+                        <img class="imgGmail" src="{{ secure_asset('img/gmail (1).png') }}">
                         <h2>klkmanitos@gmail.com</h2>
                     </article>
                 </section>
@@ -266,13 +266,13 @@
         </section>
     </footer>
 
-    <script src="{{ asset('js/register/formulario_registro.js') }}"></script>
-    <script src="{{ asset('js/register/Mostrar_password.js') }}"></script>
+    <script src="{{ secure_asset('js/register/formulario_registro.js') }}"></script>
+    <script src="{{ secure_asset('js/register/Mostrar_password.js') }}"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    {{-- <script src="{{asset('js/register/terminos.js')}}"></script> --}}
-    <script src="{{asset('js/register/terminos.js')}}"></script>
-    {{--  <script src="{{ asset('js/register/satisfactorio.js') }}"></script> --}}
+    {{-- <script src="{{secure_asset('js/register/terminos.js')}}"></script> --}}
+    <script src="{{secure_asset('js/register/terminos.js')}}"></script>
+    {{--  <script src="{{ secure_asset('js/register/satisfactorio.js') }}"></script> --}}
 
 
     @if (session('iniciar') == 'false')

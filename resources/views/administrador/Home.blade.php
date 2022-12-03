@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/admin/style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/admin/style.css') }}">
     <title>Home</title>
 </head>
 
@@ -14,7 +14,7 @@
     <header class="contenedor_h">
 
         <section class="c_imglogo">
-            <img class="imglogo" src="{{ asset('img/Logo.png') }}" alt="" srcset="">
+            <img class="imglogo" src="{{ secure_asset('img/Logo.png') }}" alt="" srcset="">
         </section>
 
     </header>
@@ -28,7 +28,7 @@
 
                 <a href="" class="none">
                     <section class="buttonperfil">
-                        <img class="Imgusuario" src="{{ asset('img/Usuario.png') }}" alt="">
+                        <img class="Imgusuario" src="{{ secure_asset('img/Usuario.png') }}" alt="">
                         <h1 class="txt_bp">
                             Perfil
                         </h1>
@@ -40,7 +40,7 @@
 
                 <a type="button" href="#" class="Cb">
                     <section class="button">
-                        <img class="Imgmenu2" src="{{ asset('img/Usuarios.png') }}" alt="">
+                        <img class="Imgmenu2" src="{{ secure_asset('img/Usuarios.png') }}" alt="">
 
                         <section class="ctxt_b">
 
@@ -55,7 +55,7 @@
 
                 <a class="Cb" type="button" href="">
                     <section class="button">
-                        <img src="{{ asset('img/datospre.png') }}" class="Imgmenu2" alt="">
+                        <img src="{{ secure_asset('img/datospre.png') }}" class="Imgmenu2" alt="">
                         <section class="ctxt_b">
                             <h2 class="txt_b">Datos de Prediccion</h2>
                             <hr class="lineaadmin">
@@ -72,7 +72,7 @@
 
                 <a class="Cb" type="button" href="">
                     <section class="button">
-                        <img class="Imgmenu2" src="{{ asset('img/vistas.png') }}" alt="" srcset="">
+                        <img class="Imgmenu2" src="{{ secure_asset('img/vistas.png') }}" alt="" srcset="">
                         <section class="ctxt_b">
                             <h2 class="txt_b">Visitas generadas</h2>
                             <hr class="lineaadmin">

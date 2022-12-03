@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bienvenidos a CitrIApp</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="shortcut icon" href="{{ asset('img/Logo.png') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link rel="shortcut icon" href="{{ secure_asset('img/Logo.png') }}" />
 </head>
 
 
@@ -19,7 +19,7 @@
 
 
         <article class="CLogo sm-4">
-            <img class="imglogo sm-12" src="{{ asset('img/Logo.png') }}">
+            <img class="imglogo sm-12" src="{{ secure_asset('img/Logo.png') }}">
 
         </article>
     </article>
@@ -33,7 +33,7 @@
 
             <a type="button" href="{{ route('login') }}" class="Cb sm-5 ">
                 <section class="button">
-                    <img class="Imghome" src="{{ asset('img/Home.png') }}">
+                    <img class="Imghome" src="{{ secure_asset('img/Home.png') }}">
                 </section>
                 <h1 class="txt sm-12">Iniciar</h1>
 
@@ -41,14 +41,14 @@
 
             <a class="Cb sm-5 " type="button" href="">
                 <section class="button">
-                    <img src="{{ asset('img/regalo.png') }}" class="ImgSer">
+                    <img src="{{ secure_asset('img/regalo.png') }}" class="ImgSer">
 
                 </section>
                 <h1 class="txt">Servicios a Ofrecer</h1>
             </a>
             <a class="Cb sm-5" type="button" href="{{route('agricultor.nosotros')}}">
                 <section class="button">
-                    <img class="ImgNosotros" src="{{ asset('img/Usuarios.png') }}">
+                    <img class="ImgNosotros" src="{{ secure_asset('img/Usuarios.png') }}">
 
                 </section>
                 <h1 class="txt">Nosotros</h1>
